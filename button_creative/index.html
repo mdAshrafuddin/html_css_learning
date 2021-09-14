@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{box-sizing: border-box;}
+		body{
+			display: grid;
+			align-content: center;
+			justify-content: center;
+			height: 100vh;
+		}
+		.button {
+			border: none;
+			display: block;
+			position: relative;
+			padding: 0.5em 2.2em;
+			font-size: 25px;
+			background: transparent;
+			cursor: pointer;
+			user-select: none;
+			overflow: hidden;
+		}
+		.button span {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: #fff;
+			z-index: -1;
+			border:  5px solid black;
+			transition: all .3s;
+		}
+		.button span:before{
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 120px;
+			background: #fff;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(-60deg);
+		}
+		.button:hover span:before,.button:focus span:before {
+			transform: translate(-50%,-50%) rotate(-90deg);
+			background: black;
+			width: 100%;
+			padding: 29px;
+		}
+		.button:hover, .button:focus {
+			color: #fff;
+		} 
+	</style>
+</head>
+<body>
+	<button class="button">
+		Submit	
+		<span></span>
+	</button>
+</body>
+</html>

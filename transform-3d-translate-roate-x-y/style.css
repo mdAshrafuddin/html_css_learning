@@ -1,0 +1,30 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv_box  {
+  width: 300px;
+  height: 100px; 
+  transition:all .4s;
+  position: relative;
+}
+#myDiv_box::before {
+	position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: red;
+    transform: rotateY(90deg);
+    transition: all .4s;
+	opacity: 0;
+}
+
+#myDiv_box:hover::before {
+	transform: rotateY(0deg);
+	opacity: 1;
+}	

@@ -1,0 +1,20 @@
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 150px 250px;
+	background: red; 
+	padding: 30px;
+	grid-gap: 30px;
+}
+
+.grid-container > div {
+	background: black;
+	border: 1px solid white;
+	padding: 30px;
+	color: #fff;
+	text-align: center;
+}
+
+.item1 {
+	grid-column: 1 / 2 / 5 / 6;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div id="toggleIcon" onclick="menuToggle()"></div>
+	<div id="menu-overly">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Our Team</a></li>
+			<li><a href="#">Conact</a></li>
+		</ul>
+	</div>
+
+<script type="text/javascript">
+	function menuToggle(){
+		var nav = document.getElementById('menu-overly');
+			nav.classList.toggle('active');
+			var imgCl = document.getElementById('toggleIcon');
+			imgCl.classList.toggle('active');
+	}
+</script>
+</body>
+</html>

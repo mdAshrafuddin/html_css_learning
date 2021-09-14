@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Input Html</title>
+</head>
+<body>
+	 <form action="/action_page.php">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+		<input type="submit" onclick="alert('Hello world')" value="Submit">
+		<input type="reset"><br><br>
+		<label id="favcolor">Select your favorite color:</label><br>
+		<input type="color" name="favcolor" id="favcolor" value="#ffffff">
+		<input type="submit" name="" value="submit">
+		<label id="myfile">My file</label>
+		<input type="file" id="myfile" name="myfile">
+		<label id="quantity">Quantity</label>
+		<input type="number" id="quantity" name="" min="1" max="5">
+		<label for="vol">Volume (between 0 and 50):</label>
+		<input type="range" min="0" max="50" name="">
+		<label for="glsearch">Search Google: </label>
+		<input type="search" name="glsearch" id="glsearch">
+		<input type="submit" name="" value="submit">
+		<input list="browsers">
+		<datalist id="browsers">
+			<option value="Chrome"></option>
+			<option value="Mozila"></option>
+			<option value="Safari"></option>
+			<option value="Internet"></option>
+			<option value="Opera"></option>
+		</datalist>
+	</form> 
+</body>
+</html>

@@ -1,0 +1,114 @@
+.header_1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background: #000;
+    padding: 39px 40px 0 45px;
+    border-bottom: 2px solid rgba(255, 255, 255, .10);
+}
+.logo{
+    text-align: left;
+    padding: 0 0 39px;
+}
+.logo img{
+    max-width: 100%;
+    height: auto;
+}
+.mainmenu{
+    position: relative;
+}
+.mainmenu ul{
+    margin: 0;
+    padding: 0;
+}
+.mainmenu ul li{
+    list-style: none;
+    display: inline-block;
+    line-height: .8;
+    padding: 0 20px 53px;
+    position: relative;
+}
+.mainmenu ul li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: .8;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+.mainmenu ul li a:after{
+    position: absolute;
+    width: 0;
+    height: 1px;
+    content: '';
+    background: #fff;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    -moz-transition: all 0.4s ease-out;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+.mainmenu ul > li.active > a,
+.mainmenu ul li a:hover{
+    color: #fff;
+}
+.mainmenu ul > li.active > a:after,
+.mainmenu ul li a:hover:after{
+    width: 100%;
+}
+.mainmenu ul ul.sub-menu {
+    background: #000;
+    width: 200px;
+    z-index: 9;
+    text-align: center;
+    padding: 25px 30px 13px;
+    transition: all ease 400ms;
+    -webkit-transition: all ease 400ms;
+    -moz-transition: all ease 400ms;
+    visibility: hidden;
+    opacity: 0;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 100px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.mainmenu ul ul.sub-menu:before {
+    content: '';
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #000;
+    z-index: 10;
+}
+.mainmenu ul li:hover ul.sub-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 66px;
+}
+.mainmenu ul ul.sub-menu li {
+    margin: 0;
+    padding: 0 0 13px;
+    display: block;
+}
+.mainmenu ul ul.sub-menu li a {
+    font-size: 14px;
+    line-height: 1.5;
+    display: inline-block;
+}
+.mainmenu ul ul.sub-menu li a:after{
+    bottom: 0;
+}
